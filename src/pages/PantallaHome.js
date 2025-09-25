@@ -12,24 +12,24 @@ export default function PantallaHome({ navigation }) {
         <Text style={styles.loginText}>Iniciar Sesión</Text>
       </TouchableOpacity>
 
-      <Text style={styles.titulo}>Menú Principal</Text>
+      <Text style={styles.titulo}>🏋️ Menú Principal</Text>
 
       <TouchableOpacity 
-        style={styles.card}
+        style={[styles.card, { backgroundColor: "#4e73df" }]}
         onPress={() => navigation.navigate("Rutinas")}
       >
         <Text style={styles.textoCard}>Rutinas</Text>
       </TouchableOpacity>
 
       <TouchableOpacity 
-        style={styles.card}
+        style={[styles.card, { backgroundColor: "#1cc88a" }]}
         onPress={() => navigation.navigate("Comidas")}
       >
         <Text style={styles.textoCard}>Comidas</Text>
       </TouchableOpacity>
 
       <TouchableOpacity 
-        style={styles.card}
+        style={[styles.card, { backgroundColor: "#e74a3b" }]}
         onPress={() => navigation.navigate("Cardio")}
       >
         <Text style={styles.textoCard}>Cardio</Text>
@@ -43,37 +43,50 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: "center",
     alignItems: "center",
-    backgroundColor: "#fff",
-    paddingTop: 60, // deja espacio para el botón arriba
+    backgroundColor: "#f8f9fc", // fondo claro moderno
+    paddingTop: 60,
   },
   loginButton: {
     position: "absolute",
     top: 20,
     right: 20,
-    backgroundColor: "#007bff",
-    padding: 8,
+    backgroundColor: "#2c3e50",
+    paddingVertical: 8,
+    paddingHorizontal: 12,
     borderRadius: 8,
+    elevation: 4,
+    shadowColor: "#000",
+    shadowOffset: { width: 0, height: 2 },
+    shadowOpacity: 0.2,
+    shadowRadius: 3,
   },
   loginText: {
     color: "#fff",
     fontWeight: "bold",
+    fontSize: 14,
   },
   titulo: {
-    fontSize: 26,
+    fontSize: 28,
     fontWeight: "bold",
-    marginBottom: 30,
+    marginBottom: 40,
+    color: "#2c3e50",
   },
   card: {
     width: "80%",
-    backgroundColor: "#e0e0e0",
-    padding: 20,
+    paddingVertical: 20,
     borderRadius: 15,
-    marginBottom: 15,
+    marginBottom: 20,
     alignItems: "center",
+    elevation: 5, // sombra Android
+    shadowColor: "#000", // sombra iOS
+    shadowOffset: { width: 0, height: 3 },
+    shadowOpacity: 0.25,
+    shadowRadius: 4,
   },
   textoCard: {
-    fontSize: 20,
+    fontSize: 22,
     fontWeight: "bold",
+    color: "#fff",
   },
 });
 
