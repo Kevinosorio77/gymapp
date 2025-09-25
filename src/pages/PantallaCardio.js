@@ -77,4 +77,4 @@ const styles = StyleSheet.create({
     color: "#fff",
     fontStyle: "italic",
   },
-});
+}); 
