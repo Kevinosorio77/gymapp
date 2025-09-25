@@ -1,10 +1,19 @@
 import React from "react";
-import { View, Text, StyleSheet, TouchableOpacity } from "react-native";
+import { View, Text, StyleSheet, TouchableOpacity, Image } from "react-native";
 
 export default function PantallaInicio({ navigation }) {
   return (
     <View style={styles.container}>
+      {/* Imagen de fisicoculturista */}
+      <Image
+        source={{ uri: "https://play-lh.googleusercontent.com/saAWUYZJEVe-XaQg54HRAN_6T_y4GAEi32qP9C03VzF8jzS6JQEMIq83YJOXoyTWzw" }}
+        style={styles.imagen}
+        resizeMode="contain"
+      />
+
       <Text style={styles.titulo}>¡Bienvenido a la app de Gym!</Text>
+      <Text style={styles.subtitulo}>Tu compañero para rutinas, comidas y cardio</Text>
+
       <TouchableOpacity 
         style={styles.boton}
         onPress={() => navigation.navigate("Home")}
@@ -20,20 +29,44 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: "center",
     alignItems: "center",
-    backgroundColor: "#f5f5f5",
+    backgroundColor: "#1e1e2f", // 🎨 Fondo sólido (azul oscuro elegante)
+    padding: 20,
+  },
+  imagen: {
+    width: 200,
+    height: 200,
+    marginBottom: 30,
+    borderRadius: 100, // redondea la imagen tipo avatar
   },
   titulo: {
-    fontSize: 24,
+    fontSize: 28,
     fontWeight: "bold",
-    marginBottom: 20,
+    color: "#fff",
+    marginBottom: 10,
+    textAlign: "center",
+  },
+  subtitulo: {
+    fontSize: 16,
+    color: "#aaa",
+    marginBottom: 40,
+    textAlign: "center",
+    paddingHorizontal: 10,
   },
   boton: {
-    backgroundColor: "#007bff",
-    padding: 15,
-    borderRadius: 10,
+    backgroundColor: "#ff3b3b",
+    paddingVertical: 15,
+    paddingHorizontal: 50,
+    borderRadius: 12,
+    elevation: 5, // sombra Android
+    shadowColor: "#000", // sombra iOS
+    shadowOffset: { width: 0, height: 2 },
+    shadowOpacity: 0.3,
+    shadowRadius: 5,
   },
   textoBoton: {
     color: "#fff",
     fontSize: 18,
+    fontWeight: "bold",
   },
 });
+
