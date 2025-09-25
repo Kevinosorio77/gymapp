@@ -69,4 +69,4 @@ const styles = StyleSheet.create({
   imagenMaquina: { width: 250, height: 150, borderRadius: 10, marginRight: 10 },
   imagenCBUM: { width: "100%", height: 250, borderRadius: 15, marginBottom: 10 },
   link: { color: "#007bff", fontSize: 16, marginBottom: 10 },
-});
+}); 
