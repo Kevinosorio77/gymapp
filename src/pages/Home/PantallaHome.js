@@ -4,7 +4,7 @@ import { View, Text, StyleSheet, TouchableOpacity } from "react-native";
 export default function PantallaHome({ navigation }) {
   return (
     <View style={styles.container}>
-      {/* Botón de inicio de sesión arriba a la derecha */}
+     
       <TouchableOpacity 
         style={styles.loginButton}
         onPress={() => navigation.navigate("Login")}
@@ -43,7 +43,7 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: "center",
     alignItems: "center",
-    backgroundColor: "#f8f9fc", // fondo claro moderno
+    backgroundColor: "#f8f9fc", 
     paddingTop: 60,
   },
   loginButton: {
@@ -77,8 +77,8 @@ const styles = StyleSheet.create({
     borderRadius: 15,
     marginBottom: 20,
     alignItems: "center",
-    elevation: 5, // sombra Android
-    shadowColor: "#000", // sombra iOS
+    elevation: 5, 
+    shadowColor: "#000", 
     shadowOffset: { width: 0, height: 3 },
     shadowOpacity: 0.25,
     shadowRadius: 4,

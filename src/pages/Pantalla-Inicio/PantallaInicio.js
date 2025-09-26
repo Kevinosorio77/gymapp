@@ -4,13 +4,8 @@ import { View, Text, StyleSheet, TouchableOpacity, Image } from "react-native";
 export default function PantallaInicio({ navigation }) {
   return (
     <View style={styles.container}>
-      {/* Imagen de fisicoculturista */}
-      <Image
-        source={{ uri: "https://play-lh.googleusercontent.com/saAWUYZJEVe-XaQg54HRAN_6T_y4GAEi32qP9C03VzF8jzS6JQEMIq83YJOXoyTWzw" }}
-        style={styles.imagen}
-        resizeMode="contain"
-      />
-
+      
+      <Image source={{ uri: "https://play-lh.googleusercontent.com/saAWUYZJEVe-XaQg54HRAN_6T_y4GAEi32qP9C03VzF8jzS6JQEMIq83YJOXoyTWzw" }} style={styles.imagen} resizeMode="contain"/>
       <Text style={styles.titulo}>¡Bienvenido a la app de Gym!</Text>
       <Text style={styles.subtitulo}>Tu compañero para rutinas, comidas y cardio</Text>
 
@@ -29,14 +24,14 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: "center",
     alignItems: "center",
-    backgroundColor: "#1e1e2f", // 🎨 Fondo sólido (azul oscuro elegante)
+    backgroundColor: "#1e1e2f", 
     padding: 20,
   },
   imagen: {
     width: 200,
     height: 200,
     marginBottom: 30,
-    borderRadius: 100, // redondea la imagen tipo avatar
+    borderRadius: 100, 
   },
   titulo: {
     fontSize: 28,
@@ -57,8 +52,8 @@ const styles = StyleSheet.create({
     paddingVertical: 15,
     paddingHorizontal: 50,
     borderRadius: 12,
-    elevation: 5, // sombra Android
-    shadowColor: "#000", // sombra iOS
+    elevation: 5, 
+    shadowColor: "#000", 
     shadowOffset: { width: 0, height: 2 },
     shadowOpacity: 0.3,
     shadowRadius: 5,

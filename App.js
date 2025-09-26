@@ -2,13 +2,14 @@ import React from "react";
 import { NavigationContainer } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 
-import PantallaInicio from "./src/pages/PantallaInicio";
-import PantallaHome from "./src/pages/PantallaHome";
-import PantallaRutinas from "./src/pages/PantallaRutinas";
-import PantallaComidas from "./src/pages/PantallaComidas";
-import PantallaCardio from "./src/pages/PantallaCardio";
-import PantallaLogin from "./src/pages/PantallaLogin";
-import PantallaTienda from "./src/pages/PantallaTienda"; 
+import PantallaInicio from "./src/pages/Pantalla-Inicio/PantallaInicio";
+import PantallaHome from "./src/pages/Home/PantallaHome";
+import PantallaRutinas from "./src/pages/principal/PantallaRutinas";
+import PantallaComidas from "./src/pages/principal/PantallaComidas";
+import PantallaCardio from "./src/pages/principal/PantallaCardio";
+import PantallaLogin from "./src/pages/Logins/PantallaLogin";
+import PantallaTienda from "./src/pages/Logins/PantallaTienda";
+
 
 const Stack = createNativeStackNavigator();
 

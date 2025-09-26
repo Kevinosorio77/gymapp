@@ -24,7 +24,7 @@ export default function PantallaCardio() {
               <Text style={styles.tiempo}>{datos.tiempo}</Text>
             </>
           ) : (
-            <Text style={styles.descanso}>Día de descanso 😴</Text>
+            <Text style={styles.descanso}>Día de descanso </Text>
           )}
         </View>
       ))}

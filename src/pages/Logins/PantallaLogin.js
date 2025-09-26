@@ -9,7 +9,7 @@ export default function PantallaLogin() {
 
   const handleLogin = () => {
     if (usuario === "admin" && password === "1234") {
-      navigation.replace("Tienda"); // 👈 va a la Tienda después del login
+      navigation.replace("Tienda"); 
     } else {
       Alert.alert("Error", "Usuario o contraseña incorrectos");
     }
